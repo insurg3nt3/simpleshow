@@ -1,3 +1,11 @@
+## Installation
+
+**Note:** Just download all files! then:
+
+```shell
+npm install
+```
+
 ## Development
 
 To get started you may run `npm run dev` to start the development server.
