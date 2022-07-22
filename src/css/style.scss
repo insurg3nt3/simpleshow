@@ -1,0 +1,39 @@
+@font-face {
+	font-family: 'simpleshow';
+	src: local('simpleshow'), url(../assets/fonts/simpleshow-font.ttf) format('truetype');
+}
+
+
+@import 'hanger_background';
+@import 'overlay_box';
+@import 'animation';
+@import 'interactive';
+
+
+.background{
+	position: relative;
+	max-width: 100vw;
+	height: 100vh;
+}
+
+.container {
+	position: absolute;
+	left: 0;
+	right: 0;
+	max-width: 80vw;
+	height: 70vh;
+	margin: auto;
+}
+
+.grey-overlay {
+	position: absolute;
+	left: 0;
+	right: 0;
+	background-color: rgba(0, 0, 0, 0.7);
+	max-width: 100vw;
+	height: 100vh;
+}
+
+
+
+

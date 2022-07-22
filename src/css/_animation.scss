@@ -1,0 +1,67 @@
+#simplemech_xA0_head {
+	animation: 2350.85ms cubic-bezier(0, 1.49, 0.3, 0.69) forwards headIn;
+}
+
+@keyframes headIn {
+	from {
+		transform: scale(10) translateY(-500%);
+	}
+	to {
+		transform: scale(1) translateY(0);
+	}
+}
+
+#simplemech_torso {
+	animation: chestIn 2.5s ease-in forwards;
+}
+
+@keyframes chestIn {
+	from {
+		transform: translateY(-200%);
+	}
+	to {
+		transform: translateY(0);
+	}
+}
+
+#simplemech_xA0_leg1 {
+	animation: dropLegs 4s cubic-bezier(0,1.49,.39,.15) forwards;
+}
+
+#simplemech_xA0_leg2 {
+	animation: dropLegs 4.5s cubic-bezier(0,1.49,.39,.15) forwards;
+}
+
+@keyframes dropLegs {
+	from {
+		transform: translateY(-250%);
+	}
+	to {
+		transform: translateY(0);
+	}
+}
+
+#simplemech_xA0_arm_1 {
+	animation: dropLegs 3s cubic-bezier(0,1.49,.39,.15) forwards;
+}
+
+#simplemech_xA0_arm_2 {
+	animation: dropLegs 3.2s cubic-bezier(0,1.49,.39,.15) forwards;
+}
+
+#simplemech_xA0_chest {
+	animation: dropLegs 5s cubic-bezier(0,1.49,.39,.15) forwards;
+}
+
+#instruction_box {
+	animation: boxIn 7.5s ease forwards;
+}
+
+@keyframes boxIn {
+	from {
+		transform: translatex(200%);
+	}
+	to {
+		transform: translatex(0);
+	}
+}

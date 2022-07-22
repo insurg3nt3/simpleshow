@@ -1,0 +1,69 @@
+#overlay_box{
+	max-width: 60vw;
+	position: absolute;
+	left: 25%;
+	right: 0;
+	top: 8%;
+	opacity: 0;
+	animation:
+		dropIn 5s ease forwards,
+	 	float 1s infinite alternate;
+}
+
+@keyframes dropIn {
+	20%{
+		opacity: 0;
+		transform: translateY(-20%);
+	}
+
+	30%, 100%{
+		opacity: 0.8;
+		transform: translateY(0);
+	}
+
+}
+
+@keyframes float {
+	from {
+		/*will-change: unset;*/
+		transform: translateY(-10px)
+	} to {
+		  /*will-change: transform;*/
+		  transform: translateY(-15px)
+	  }
+}
+
+#medium_box{
+	opacity: 0;
+	animation:
+		dropIn 8s ease forwards,
+		float 0.99s infinite alternate;
+}
+
+#small_box{
+	opacity: 0;
+	animation:
+		dropIn 12s ease forwards,
+		float 0.97s infinite alternate;
+}
+
+#start_x5F_button_xA0_Image {
+	opacity: 0;
+	cursor: pointer;
+	transition: filter 0.5s;
+	&:hover {
+		filter: hue-rotate(100deg);
+	}
+	animation: fadeInUp 2s ease-in forwards;
+}
+
+@keyframes fadeInUp {
+	from {
+		opacity: 0;
+		transform: translateY(5%);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
