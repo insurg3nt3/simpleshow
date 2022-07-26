@@ -20,9 +20,10 @@ export default () => {
 		// router('#/interactive');
 	})
 
+	mechParts = 6;
+
 	return divElement;
 };
-
 
 // enable draggables to be dropped into this
 interact('.dropzone').dropzone({
