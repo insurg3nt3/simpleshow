@@ -5,8 +5,8 @@ export default () => {
 	const divElement = document.createElement('div');
 	divElement.innerHTML = views;
 
-	//We need to go to other view due to some issue with drag and drop after css animations
-	var lastAnimation = divElement.querySelector("#instruction_box");
+	//We need to go to other view due to some weird issue with drag and drop after css animations
+	let lastAnimation = divElement.querySelector("#instruction_box");
 
 	lastAnimation.addEventListener('animationend',()=> {
 		router('#/interactive');

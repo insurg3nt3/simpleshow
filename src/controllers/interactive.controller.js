@@ -10,14 +10,14 @@ export default () => {
 	divElement.innerHTML = views;
 
 	const greyOverlay = divElement.querySelector('.grey-overlay');
-	const feedbackWin = divElement.querySelector('#feedback_win');
 	const restartButton = divElement.querySelector('#restart_button');
 
 	greyOverlay.setAttribute("style","visibility:hidden");
-	feedbackWin.setAttribute("style","visibility:hidden")
 
 	restartButton.addEventListener('click',()=> {
 		router('#/animation');
+		// if you want to skip the animation you can go to:
+		// router('#/interactive');
 	})
 
 	return divElement;
@@ -38,10 +38,10 @@ interact('.dropzone').dropzone({
 function partIsInCorrectPlace (event){
 
 	// Compare drop-zone and drag element Ids
-	let groupId = event.relatedTarget.getAttribute('id')
-	let groupIdPlace = event.target.getAttribute('id').slice(0, -9);
+	let partId = event.relatedTarget.getAttribute('id')
+	let dropZoneId = event.target.getAttribute('id').slice(0, -9);
 
-	if (groupId !== groupIdPlace) {
+	if (partId !== dropZoneId) {
 		event.relatedTarget.removeAttribute('style')
 		event.relatedTarget.removeAttribute('data-x')
 		event.relatedTarget.removeAttribute('data-y')
@@ -53,26 +53,23 @@ function partIsInCorrectPlace (event){
 		if (mechParts === 0){
 			const greyOverlay = document.querySelector('.grey-overlay');
 			const feedbackWin = document.querySelector('#feedback_win');
+			const largeBox = document.querySelector('#large_box_feedback');
+			const mediumBox = document.querySelector('#medium_box_feedback');
+			const smallBox = document.querySelector('#small_box_feedback');
 
 			greyOverlay.setAttribute("style","visibility:visible");
-			feedbackWin.removeAttribute("style");
-			feedbackWin.classList.add('feedback_win_animation');
+			feedbackWin.setAttribute("style","visibility:visible")
+
+			largeBox.removeAttribute("style");
+			largeBox.classList.add('large-box-animation');
+			mediumBox.removeAttribute("style");
+			mediumBox.classList.add('medium-box-animation');
+			smallBox.removeAttribute("style");
+			smallBox.classList.add('small-box-animation');
+
 			mechParts = 6;
 		}
 	}
-
-	/*if (groupId === groupIdPlace) {
-		event.target.style.visibility = 'visible'
-		mechParts--
-		if (mechParts === 0){
-			console.log("terminóoo")
-		}
-
-	} else {
-
-		let clone = event.relatedTarget.cloneNode(true)
-		event.currentTarget.parentElement.appendChild(clone)
-	}*/
 
 	event.relatedTarget.remove()
 }
@@ -91,7 +88,6 @@ function dragMoveListener (event) {
 	target.setAttribute('data-y', y)
 }
 
-
 interact('.drag-drop')
 	.draggable({
 		inertia: true,
@@ -102,6 +98,5 @@ interact('.drag-drop')
 			})
 		],
 		autoScroll: true,
-		// dragMoveListener from the dragging demo above
 		listeners: { move: dragMoveListener}
 	})

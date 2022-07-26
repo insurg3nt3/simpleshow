@@ -1,7 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f3edf4ed-fbd8-406d-9bdb-77ea66c29525" name="Changes" comment="" />
+    <list default="true" id="f3edf4ed-fbd8-406d-9bdb-77ea66c29525" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_storyboard/image_assets/ai/complete.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_storyboard/image_assets/ai/hanger_background.ai" beforeDir="false" afterPath="$PROJECT_DIR$/_storyboard/image_assets/ai/hanger_background.ai" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/example.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/feedback_overlay-box-large.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/images/feedback_overlay-box-large.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/feedback_overlay-box-medium.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/feedback_overlay-box-small.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/hanger_background-with-parts.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/hanger_background.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/images/hanger_background.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/hanger_background_in_place_parts.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/instruction_box.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/simplemech-arm_1.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/simplemech-arm_2.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/simplemech-chest.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/simplemech-complete.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/simplemech-head.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/simplemech-leg1.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/simplemech-leg2.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/simplemech-torso.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/start_button.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/start_overlay-box-medium.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/start_overlay-box-small.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controllers/interactive.animation.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/interactive.animation.controller.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controllers/interactive.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/interactive.controller.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controllers/start.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/start.controller.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/css/_overlay_box.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/_overlay_box.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/css/_start.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/_start.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/css/interactive.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/_interactive.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/interactive.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/interactive.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/start.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/start.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -72,6 +103,10 @@
       <workItem from="1658351497767" duration="42115000" />
       <workItem from="1658416628897" duration="40860000" />
       <workItem from="1658630290684" duration="10393000" />
+      <workItem from="1658677239377" duration="240000" />
+      <workItem from="1658681415884" duration="598000" />
+      <workItem from="1658769984267" duration="766000" />
+      <workItem from="1658796275531" duration="8528000" />
     </task>
     <servers />
   </component>

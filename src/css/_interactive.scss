@@ -1,3 +1,4 @@
+/* start - SVG styles affecting other elements outside the svg */
 #hanger_background_in_place_parts{
 .st0{fill:#FEFEFE;}
 .st1{fill:#010101;}
@@ -341,7 +342,6 @@
 .st339{font-family:'simpleshow';}
 .st340{font-size:25px;}
 }
-
 #feedback_win{
 	.st0{fill:#FFFFFF;}
 	.st1{fill:#010000;}
@@ -440,24 +440,34 @@
 	.st94{fill:#FEFEFD;}
 	.st95{fill:#070400;}
 	.st96{fill:#080500;}
-
 }
+/* end - SVG styles affecting other elements outside the svg */
 
 #feedback_win{
-	max-width: 50vw;
+	max-width: 80vw;
 	position: absolute;
-	left: 18%;
+	left: 10%;
 	right: 0;
-	top: 6%;
-
+	top: 4%;
+	visibility: hidden;
 }
 
-.feedback_win_animation{
-	visibility: visible;
-	opacity: 0.8;
-	animation:
-		float 1s infinite alternate;
+#large_box_feedback, #medium_box_feedback, #small_box_feedback {
+	opacity: 0;
 }
+
+@mixin feedback_win_animation($name, $time) {
+	.#{$name}-box-animation {
+		visibility: visible;
+		animation:
+			dropIn #{$time}s ease forwards,
+			float 1s infinite alternate;
+	}
+}
+
+@include feedback_win_animation("large", 1);
+@include feedback_win_animation("medium", 2.5);
+@include feedback_win_animation("small", 3.5);
 
 #i_simplemech_xA0_head_in_place,
 #i_simplemech_xA0_leg1_in_place, #i_simplemech_xA0_leg2_in_place,
@@ -468,4 +478,8 @@
 
 #restart_button {
 	cursor: pointer;
+}
+
+#restart_button:hover{
+	fill: #0FC161;
 }

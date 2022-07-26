@@ -5,7 +5,7 @@ export default () => {
 	const divElement = document.createElement('div');
 	divElement.innerHTML = views;
 
-	const btnStart = divElement.querySelector('#start_x5F_button_xA0_Image');
+	const btnStart = divElement.querySelector('#start_button');
 
 	btnStart.addEventListener('click',()=> {
 		router('#/animation');

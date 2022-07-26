@@ -25,12 +25,10 @@
 
 @keyframes float {
 	from {
-		/*will-change: unset;*/
 		transform: translateY(-10px)
 	} to {
-		  /*will-change: transform;*/
 		  transform: translateY(-15px)
-	  }
+	}
 }
 
 #medium_box{
@@ -47,7 +45,7 @@
 		float 0.97s infinite alternate;
 }
 
-#start_x5F_button_xA0_Image {
+#start_button {
 	opacity: 0;
 	cursor: pointer;
 	transition: filter 0.5s;
