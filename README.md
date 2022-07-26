@@ -1,6 +1,7 @@
 ## Preview
 
-[simpleshow](https://sprightly-sprite-987e18.netlify.app/)
+[SIMPLEMECH X](https://sprightly-sprite-987e18.netlify.app/){:target="_blank"}
+
 
 ## Installation
 
