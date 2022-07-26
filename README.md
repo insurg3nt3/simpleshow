@@ -1,3 +1,7 @@
+## Preview
+
+[simpleshow](https://sprightly-sprite-987e18.netlify.app/)
+
 ## Installation
 
 **Note:** Just download all files! then:
